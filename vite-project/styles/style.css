@@ -9,6 +9,7 @@ body,
   font-family: Arial, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased; 
   -moz-osx-font-smoothing: grayscale; 
+
 }
 :root {
   /* Type */
@@ -67,23 +68,100 @@ h5 {
     align-items: center;
 
 }
-
-#main-image{
-    margin-top: 2rem;
-    padding: 3px; 
-    width: 50%;
-    align-content: center;
-    justify-content: space-around;
-
-
-}   
 .main-info{
     border-style: dashed;
     border-color: #2c3e50; 
-    width: 90%;
+    width: 45%;
     align-content: center;
     justify-content: space-around;
     margin: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 
+}
+
+
+.display {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90vw;
+  margin: 2rem auto;
+  box-sizing: border-box;
+  align-items: center;
+  
+}
+.display-card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-radius: 30px;
+  font-style: italic;
+  margin-top: 10%;
+  /* margin: 2rem; */
+  width: 35%;
+  justify-content: space-around;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7f4ff;
+  transition: all 0.2s;
+}
+.display-img {
+  padding: 5%;
+  width: 70%;
+  border-radius: 30px;
+}
+.display-artist{
+  margin-top: 1rem;
+  font-size: var(--h4);
+  margin-bottom: 1rem;
+}
+
+.display-card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 1rem 1rem #b8deff;
+}
+
+.btn,
+.btn:link,
+.btn:visited, .link-button{
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  margin: 1rem;
+  font-size: 2rem;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  border-style: dashed;
+  border-color: #826b6b;
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+  background-color: #ffffff;
+}
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem #b8deff;
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem #b8deff;
+}
+
+.link-button{
+  padding: 1rem 2rem;
+  display: inline-block;
+  margin: 1rem;
+  font-size: 2rem;
+  border: none;
+  background-color: #b8deff;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.link-button:hover {
+  transform: translateY(-0.3rem);
+  
 }
