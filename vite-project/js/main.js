@@ -1,12 +1,11 @@
 import "../styles/style.css";
-import { angel } from "../js/2434/angel";
+import { songlist } from "../js/songlist";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
 
 const DOMSelectors = {
-  button: document.querySelector(".btn"),
   display: document.querySelector("#display"),
 };
 
