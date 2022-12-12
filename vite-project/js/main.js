@@ -9,12 +9,27 @@ const DOMSelectors = {
   display: document.querySelector("#display"),
 };
 
-DOMSelectors.display.insertAdjacentHTML(
-  "beforeend",
+function display() {
+  e.preventDefault();
+  DOMSelectors.display.insertAdjacentHTML(
+    songlist,
+    "beforeend",
 
-  `<div data-aos="fade-down" class="display-card">
-  <img class="display-img" src="images/icebreaker.png"/>
-  <h5 class="display-album">IceBreaker</h5>
-   <button class="link-button">Listen now</button>
-  </div>`
-);
+    `<div class="display-card">
+              <p class="display-album">${song}</p>
+              <p class ="display-artist">${artist}</p>
+              <button class="display-link">To Listen</button>
+            </div>`
+  );
+}
+
+/* document.querySelector(".btn").addEventListener("click", function () {
+  if (document.body.classList.contains("cool")) {
+    document.body.classList.add("warm");
+    document.body.classList.remove("cool");
+  } else {
+    document.body.classList.add("cool");
+    document.body.classList.remove("warm");
+  }
+});
+ */
