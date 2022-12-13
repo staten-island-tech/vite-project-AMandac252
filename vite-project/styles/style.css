@@ -11,6 +11,7 @@ body,
   -moz-osx-font-smoothing: grayscale; 
 
 }
+
 :root {
   /* Type */
   --h1: 6.854rem;
@@ -22,26 +23,28 @@ body,
  
   /*  colors  */
   --black: #000;
-  --light-blue: #2998ff;
-  --dark-blue: #135cc5;
-  --light-red: #f87171;
-  --dark-red: #dc2626;
+  
+  --light-blue: #31AFEB;
+  --mid-blue: #0275B0;
+  --dark-blue:#091C6B;
+  
+  --light-red: #ea5454;
+  --mid-red: #dc2626;
+  --dark-red: #A80001;
+
   --gray: #252c30;
 
   /*Intentions */
   --primary: var(--light-blue);
-  --secondary: var(--dark-blue);
-   /*Intentions */
-   --primary: var(--light-blue);
-   --secondary: var(--dark-blue);
+  --secondary: var(--mid-blue);
 }
  .warm {
    --primary: var(--light-red);
-   --secondary: var(--dark-red);
+   --secondary: var(--mid-red);
  }
  .cool {
    --primary: var(--light-blue);
-   --secondary: var(--dark-blue);
+   --secondary: var(--mid-blue);
  }
  .hero {
    background-color: var(--primary);
@@ -108,11 +111,9 @@ h5 {
     justify-content: space-around;
     margin: 2rem;
     font-size: 1.5rem;
-
 }
 
-
-.display {
+.display{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
