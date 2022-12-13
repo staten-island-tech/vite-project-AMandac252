@@ -19,7 +19,39 @@ body,
   --h4: 1.618rem;
   --h5: 1.5rem;
   --smallText: 1rem;
+ 
+  /*  colors  */
+  --black: #000;
+  --light-blue: #2998ff;
+  --dark-blue: #135cc5;
+  --light-red: #f87171;
+  --dark-red: #dc2626;
+  --gray: #252c30;
+
+  /*Intentions */
+  --primary: var(--light-blue);
+  --secondary: var(--dark-blue);
+   /*Intentions */
+   --primary: var(--light-blue);
+   --secondary: var(--dark-blue);
 }
+ .warm {
+   --primary: var(--light-red);
+   --secondary: var(--dark-red);
+ }
+ .cool {
+   --primary: var(--light-blue);
+   --secondary: var(--dark-blue);
+ }
+ .hero {
+   background-color: var(--primary);
+ }
+ .main {
+   background-color: var(--secondary);
+   
+}
+
+
 h1 {
   margin-top: 40px;
   font-size: var(--h1);
@@ -57,7 +89,7 @@ h5 {
     flex-direction: wrap;
 }
 
-.title{
+.title, .sub-title{
     text-align: center;
 }
 

@@ -103,6 +103,13 @@ const songlist = [
     release: "Dec 11, 2022",
     link: "https://youtu.be/k0olaw_WjlA",
   },
+
+  {
+    song: "【オリジナル】Lily ",
+    type: "orignal",
+    release: "Dec 11, 2022",
+    link: "https://youtu.be/ph4XsJy1scg",
+  },
 ];
 
 export { songlist };
