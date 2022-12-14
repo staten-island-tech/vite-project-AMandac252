@@ -24,13 +24,13 @@ body,
   /*  colors  */
   --black: #000;
   
-  --light-blue: #31AFEB;
-  --mid-blue: #0275B0;
-  --dark-blue:#091C6B;
+  --light-blue: #ABD3D8;
+  --mid-blue: #589DB3;
+  --dark-blue:#102f94;
   
-  --light-red: #ea5454;
-  --mid-red: #dc2626;
-  --dark-red: #A80001;
+  --light-red: #ACA7BB;
+  --mid-red: #84848A;
+  --dark-red: #9f1818;
 
   --gray: #252c30;
 
@@ -41,7 +41,7 @@ body,
  .warm {
    --primary: var(--light-red);
    --secondary: var(--mid-red);
- }
+   }
  .cool {
    --primary: var(--light-blue);
    --secondary: var(--mid-blue);

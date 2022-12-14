@@ -23,30 +23,33 @@ DOMSelectors.themeBtn.addEventListener("click", function () {
     document.body.classList.add("cool");
     document.body.classList.remove("warm");
   }
-
-  console.log("work");
 });
 
 DOMSelectors.orignal.addEventListener("click", function () {
   console.log("orignal");
+
+  original();
 });
 
 DOMSelectors.cover.addEventListener("click", function () {
   console.log("cover");
+
+  cover();
 });
 
-/* DOMselectors.display.forEach(
-  (element) =>
-    function addcard(songlist) {
-      DOMSelectors.display.insertAdjacentHTML(
-        "beforeend",
+/* FUCNTION LIBRARY */
+function original() {
+  songlist
+    .filter((song) => song.type == "orignal")
+    .forEach((song) => {
+      console.log(song.title, song.type);
+    });
+}
 
-        `<div class="display-card">
-      <p class="display-album">${title}</p>
-      <p><img class="display-img" src="${img}"></p>
-      <p class ="display-artist">${artist}</p>
-      <button class="remove btn">Remove Album</button>
-    </div>`
-      );
-    }
-); */
+function cover() {
+  songlist
+    .filter((song) => song.type == "cover")
+    .forEach((song) => {
+      console.log(song.title, song.type);
+    });
+}
