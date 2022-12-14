@@ -6,9 +6,13 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
 
+console.log(songlist);
+
 const DOMSelectors = {
   display: document.querySelector("#display"),
   themeBtn: document.querySelector(".btn"),
+  orignal: document.querySelector(".ori-btn"),
+  cover: document.querySelector(".cover-btn"),
 };
 
 DOMSelectors.themeBtn.addEventListener("click", function () {
@@ -23,16 +27,26 @@ DOMSelectors.themeBtn.addEventListener("click", function () {
   console.log("work");
 });
 
-// function display() {
-//   e.preventDefault();
-//   DOMSelectors.display.insertAdjacentHTML(
-//     songlist,
-//     "beforeend",
+DOMSelectors.orignal.addEventListener("click", function () {
+  console.log("orignal");
+});
 
-//     `<div class="display-card">
-//               <p class="display-album">${song}</p>
-//               <p class ="display-artist">${artist}</p>
-//               <button class="display-link">To Listen</button>
-//             </div>`
-//   );
-// }
+DOMSelectors.cover.addEventListener("click", function () {
+  console.log("cover");
+});
+
+/* DOMselectors.display.forEach(
+  (element) =>
+    function addcard(songlist) {
+      DOMSelectors.display.insertAdjacentHTML(
+        "beforeend",
+
+        `<div class="display-card">
+      <p class="display-album">${title}</p>
+      <p><img class="display-img" src="${img}"></p>
+      <p class ="display-artist">${artist}</p>
+      <button class="remove btn">Remove Album</button>
+    </div>`
+      );
+    }
+); */
