@@ -7,7 +7,7 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 AOS.init();
 
 const DOMSelectors = {
-  display: document.querySelector("#display"),
+  display: document.querySelector(".display"),
   themeBtn: document.querySelector(".btn"),
   orignal: document.querySelector(".ori-btn"),
   cover: document.querySelector(".cover-btn"),
@@ -28,16 +28,6 @@ DOMSelectors.themeBtn.addEventListener("click", function () {
   }
 });
 
-DOMSelectors.display.insertAdjacentHTML(
-  "afterend",
-  `<div class="display-card">
-<img class="display-img" src="images/icebreaker.png" />
-<h2 class="display-artist">Beatles</h2>
-<h3 class="display-album">Abbey Road</h3>
-<button class="remove btn">Remove Album</button>
-</div>`
-);
-
 DOMSelectors.orignal.addEventListener("click", function () {
   console.log("orignal");
 
@@ -48,6 +38,19 @@ DOMSelectors.cover.addEventListener("click", function () {
   console.log("cover");
 
   cover();
+});
+
+songlist.forEach((songlist) => {
+  DOMSelectors.display.insertAdjacentHTML(
+    "afterend",
+
+    `<div class="display-card">
+        <img class="display-img" src="images/icebreaker.png" />
+        <h2 class="display-artist">Beatles</h2>
+        <h3 class="display-album">Abbey Road</h3>
+        <button class="remove btn">Remove Album</button>
+      </div>`
+  );
 });
 
 /* FUCNTION LIBRARY */
