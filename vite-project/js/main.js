@@ -11,11 +11,6 @@ const DOMSelectors = {
   themeBtn: document.querySelector(".btn"),
   orignal: document.querySelector(".ori-btn"),
   cover: document.querySelector(".cover-btn"),
-  /* song items */
-  title: document.getElementsByClassName(".title"),
-  release: document.getElementsByClassName(".release"),
-  link: document.getElementsByClassName(".link"),
-  img: document.getElementsByClassName(".image"),
 };
 
 DOMSelectors.themeBtn.addEventListener("click", function () {
@@ -41,20 +36,25 @@ DOMSelectors.cover.addEventListener("click", function () {
 });
 
 songlist.forEach((songlist) => {
+  const title = songlist.title;
+  const link = songlist.link;
+  const release = songlist.release;
+
   DOMSelectors.display.insertAdjacentHTML(
     "afterend",
 
     `<div class="display-card">
         <img class="display-img" src="images/icebreaker.png" />
-        <h2 class="display-artist">Beatles</h2>
-        <h3 class="display-album">Abbey Road</h3>
-        <button class="remove btn">Remove Album</button>
+        <h3 class="display-title">${title}</h3>
+        <h4 class="display-release">${release}</h4>
+        <a href=${link} target ="blank"><button class="link-btn">Click to Listen</button>
       </div>`
   );
 });
 
 /* FUCNTION LIBRARY */
 function original() {
+  e.parentElement.remove();
   songlist
     .filter((song) => song.type == "orignal")
     .forEach((song) => {
@@ -70,15 +70,15 @@ function cover() {
     });
 }
 
-function card() {
+function filtercard(title, release, link) {
   DOMSelectors.display.insertAdjacentHTML(
     "afterend",
 
     `<div class="display-card">
-      <img class="display-img" src="images/icebreaker.png" />
-      <h2 class="display-artist">Beatles</h2>
-      <h3 class="display-album">Abbey Road</h3>
-      <button class="remove btn">Remove Album</button>
-    </div>`
+        <img class="display-img" src="images/icebreaker.png" />
+        <h3 class="display-title">${title}</h3>
+        <h4 class="display-release">${release}</h4>
+        <a href=${link} target ="blank"><button class="link-btn">Click to Listen</button>
+      </div>`
   );
 }

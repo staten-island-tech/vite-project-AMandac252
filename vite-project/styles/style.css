@@ -5,11 +5,10 @@ body,
   font-size: 10px;
   padding: 0;
   margin: 0;
-  color: #2c3e50;
+  color: #384855;
   font-family: Arial, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased; 
   -moz-osx-font-smoothing: grayscale; 
-
 }
 
 :root {
@@ -28,23 +27,21 @@ body,
   --mid-blue: #589DB3;
   --dark-blue:#102f94;
   
-  --light-red: #ACA7BB;
-  --mid-red: #84848A;
+  --light-gray: #ACA7BB;
+  --mid-gray: #84848A;
   --dark-red: #9f1818;
 
   --gray: #252c30;
-
-  /*Intentions */
-  --primary: var(--light-blue);
-  --secondary: var(--mid-blue);
 }
  .warm {
-   --primary: var(--light-red);
-   --secondary: var(--mid-red);
+   --primary: var(--light-gray);
+   --secondary: var(--mid-gray);
+   --tertiary:var(--dark-red); 
    }
  .cool {
    --primary: var(--light-blue);
    --secondary: var(--mid-blue);
+   --tertiary:var(--dark-blue);
  }
  .hero {
    background-color: var(--primary);
@@ -54,6 +51,12 @@ body,
    
 }
 
+/* body{
+  background-image: url(images/bottom-image.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+} */
 
 h1 {
   margin-top: 40px;
@@ -115,9 +118,9 @@ h5 {
 
 .display{
   display: flex;
+  max-width: 90vw;
   flex-direction: row;
   justify-content: space-around;
-  width: 90vw;
   margin: 2rem auto;
   box-sizing: border-box;
   align-items: center;
@@ -126,18 +129,18 @@ h5 {
 }
 
 .display-card {
-  display: flex;
+  display: flex; 
   flex-direction: column;
   box-sizing: border-box;
-  border-radius: 30px;
+  border-radius: 20px;
   font-style: italic;
-  margin: 20rem; 
-  width: 23%;
+  margin: 2rem; 
+  width: 20%;
   justify-content: space-around;
   font-weight: bold;
   align-items: center;
   justify-content: center;
-  background-color: #e7f4ff;
+  background-color: var(--primary);
   transition: all 0.2s;
 }
 .display-img {
@@ -146,7 +149,7 @@ h5 {
   justify-content: space-around;
   border-radius: 30px;
 }
-.display-artist{
+.display-title{
   margin-top: 1rem;
   font-size: var(--h4);
   margin-bottom: 1rem;
@@ -154,22 +157,22 @@ h5 {
 
 .display-card:hover {
   transform: translateY(-0.5rem);
-  box-shadow: 0 1rem 1rem #b8deff;
+  box-shadow: 0 1rem 1rem var(--secondary);
 }
 
 .btn,
 .btn:link,
-.btn:visited, .link-button, .ori-btn, .cover-btn{
+.btn:visited, .link-btn, .ori-btn, .cover-btn{
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
   display: inline-block;
   margin: 1rem;
   font-size: 2rem;
-  border-radius: 10rem;
+  border-radius: 2rem;
   transition: all 0.2s;
   position: relative;
-  border-style: dashed;
+  border-style:double;
   border-color: #826b6b;
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
@@ -177,25 +180,23 @@ h5 {
 }
 .btn:hover, .ori-btn:hover, .cover-btn:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem #b8deff;
+  box-shadow: 0 1rem 2rem var(--secondary);
 }
 .btn:active, .ori-btn:active, .cover-btn:active{
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem #b8deff;
+  box-shadow: 0 0.5rem 1rem var(--secondary); 
 }
 
-.link-button,{
+.link-btn,{
   padding: 1rem 2rem;
   display: inline-block;
   margin: 1rem;
   font-size: 2rem;
   border: none;
-  background-color: #b8deff;
+  background-color: var(--primary);
   color: #ffffff;
-  border-radius: 10px;
 }
 
-.link-button:hover {
-  transform: translateY(-0.3rem);
-  
+.link-btn:hover {
+  transform: translateY(-0.3rem); 
 }
