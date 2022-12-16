@@ -41,7 +41,7 @@ songlist.forEach((songlist) => {
   const release = songlist.release;
 
   DOMSelectors.display.insertAdjacentHTML(
-    "afterend",
+    "beforeend",
 
     `<div class="display-card">
         <img class="display-img" src="images/icebreaker.png" />
@@ -54,31 +54,37 @@ songlist.forEach((songlist) => {
 
 /* FUCNTION LIBRARY */
 function original() {
-  e.parentElement.remove();
+  DOMSelectors.display.innerHTML = "";
   songlist
     .filter((song) => song.type == "orignal")
     .forEach((song) => {
-      console.log(song.title, song.type);
+      DOMSelectors.display.insertAdjacentHTML(
+        "beforeend",
+
+        `<div class="display-card">
+            <img class="display-img" src="images/icebreaker.png" />
+            <h3 class="display-title">${song.title}</h3>
+            <h4 class="display-release">${song.release}</h4>
+            <a href=${song.link} target ="blank"><button class="link-btn">Click to Listen</button>
+          </div>`
+      );
     });
 }
 
 function cover() {
+  DOMSelectors.display.innerHTML = "";
   songlist
     .filter((song) => song.type == "cover")
     .forEach((song) => {
-      console.log(song.title, song.type);
+      DOMSelectors.display.insertAdjacentHTML(
+        "beforeend",
+
+        `<div class="display-card">
+            <img class="display-img" src="images/icebreaker.png" />
+            <h3 class="display-title">${song.title}</h3>
+            <h4 class="display-release">${song.release}</h4>
+            <a href=${song.link} target ="blank"><button class="link-btn">Click to Listen</button>
+          </div>`
+      );
     });
-}
-
-function filtercard(title, release, link) {
-  DOMSelectors.display.insertAdjacentHTML(
-    "afterend",
-
-    `<div class="display-card">
-        <img class="display-img" src="images/icebreaker.png" />
-        <h3 class="display-title">${title}</h3>
-        <h4 class="display-release">${release}</h4>
-        <a href=${link} target ="blank"><button class="link-btn">Click to Listen</button>
-      </div>`
-  );
 }
