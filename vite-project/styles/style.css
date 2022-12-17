@@ -53,6 +53,7 @@ body,
 }
 
 body{
+
   background-image: url(images/bottom-image.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
@@ -166,7 +167,7 @@ h5 {
 
 .btn,
 .btn:link,
-.btn:visited, .link-btn, .ori-btn, .cover-btn{
+.btn:visited, .link-btn, .ori-btn, .cover-btn, .all-btn{
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -182,11 +183,11 @@ h5 {
   animation-fill-mode: backwards;
   background-color: #ffffff;
 }
-.btn:hover, .ori-btn:hover, .cover-btn:hover {
+.btn:hover, .ori-btn:hover, .cover-btn:hover, .all-btn:hover{
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem var(--secondary);
 }
-.btn:active, .ori-btn:active, .cover-btn:active{
+.btn:active, .ori-btn:active, .cover-btn:active, .all-btn:active{
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem var(--secondary); 
 }

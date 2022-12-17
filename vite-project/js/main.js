@@ -11,6 +11,7 @@ const DOMSelectors = {
   themeBtn: document.querySelector(".btn"),
   orignal: document.querySelector(".ori-btn"),
   cover: document.querySelector(".cover-btn"),
+  all: document.querySelector(".all-btn"),
 };
 
 DOMSelectors.themeBtn.addEventListener("click", function () {
@@ -35,34 +36,27 @@ DOMSelectors.cover.addEventListener("click", function () {
   cover();
 });
 
-songlist.forEach((songlist) => {
-  const title = songlist.title;
-  const link = songlist.link;
-  const release = songlist.release;
+DOMSelectors.all.addEventListener("click", function () {
+  console.log("all");
 
-  DOMSelectors.display.insertAdjacentHTML(
-    "beforeend",
+  all();
+});
 
-    `<div class="display-card">
-        <img class="display-img" src="images/icebreaker.png" />
-        <h3 class="display-title">${title}</h3>
-        <h4 class="display-release">${release}</h4>
-        <a href=${link} target ="blank"><button class="link-btn">Click to Listen</button>
-      </div>`
-  );
+songlist.forEach(() => {
+  all();
 });
 
 /* FUCNTION LIBRARY */
 function original() {
   DOMSelectors.display.innerHTML = "";
   songlist
-    .filter((song) => song.type == "orignal")
+    .filter((song) => song.type == "original")
     .forEach((song) => {
       DOMSelectors.display.insertAdjacentHTML(
         "beforeend",
 
-        `<div class="display-card">
-            <img class="display-img" src="images/icebreaker.png" />
+        `<div data-aos="fade-down" class="display-card">
+            <img class="display-img" src="${song.image}" />
             <h3 class="display-title">${song.title}</h3>
             <h4 class="display-release">${song.release}</h4>
             <a href=${song.link} target ="blank"><button class="link-btn">Click to Listen</button>
@@ -79,12 +73,28 @@ function cover() {
       DOMSelectors.display.insertAdjacentHTML(
         "beforeend",
 
-        `<div class="display-card">
-            <img class="display-img" src="images/icebreaker.png" />
+        `<div data-aos="fade-down" class="display-card">
+            <img class="display-img" src="${song.image}" />
             <h3 class="display-title">${song.title}</h3>
             <h4 class="display-release">${song.release}</h4>
             <a href=${song.link} target ="blank"><button class="link-btn">Click to Listen</button>
           </div>`
       );
     });
+}
+
+function all() {
+  DOMSelectors.display.innerHTML = "";
+  songlist.forEach((song) => {
+    DOMSelectors.display.insertAdjacentHTML(
+      "beforeend",
+
+      `<div data-aos="fade-down" class="display-card">
+            <img class="display-img" src="${song.image}" />
+            <h3 class="display-title">${song.title}</h3>
+            <h4 class="display-release">${song.release}</h4>
+            <a href=${song.link} target ="blank"><button class="link-btn">Click to Listen</button>
+          </div>`
+    );
+  });
 }
