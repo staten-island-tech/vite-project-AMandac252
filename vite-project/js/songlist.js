@@ -1,8 +1,24 @@
 const songlist = [
   {
+    title: "【初投稿】終末じゃない　歌ってみた",
+    type: "original",
+    release: ["Aug 23, 2018"],
+    link: "https://youtu.be/D5Cdf-iiuy8",
+    image: "images/Songimages/終末じゃない　歌ってみた.jpg",
+  },
+
+  {
+    title: "【MV】ヘテロスタシス ",
+    type: "original",
+    release: ["Feb 11, 2020"],
+    link: "https://youtu.be/sTcvNTQS86s",
+    image: "images/Songimages/Heterostatis.jpg",
+  },
+
+  {
     title: "【『Not For You』叶／葛葉】",
     type: "original",
-    release: "Feb 11, 2020",
+    release: ["Feb 11, 2020"],
     link: "https://youtu.be/ppKMVPpdcE0",
     image: "images/Songimages/Notforyou.png",
   },
@@ -10,7 +26,7 @@ const songlist = [
   {
     title: "【オリジナルMV】Ice breaker",
     type: "cover",
-    release: "May 24, 2020",
+    release: ["May 24, 2020"],
     link: "https://youtu.be/uexq0h89LNs",
     image: "images/Songimages/icebreaker.png",
   },
@@ -18,7 +34,7 @@ const songlist = [
   {
     title: "【オリジナル】常夏★スカイスクレイパー",
     type: "original",
-    release: "Sept 13, 2020",
+    release: ["Sept 13, 2020"],
     link: "https://youtu.be/bJD2wtXcIRA",
     image: "images/Songimages/SKyScrapper.jpg",
   },
@@ -26,7 +42,7 @@ const songlist = [
   {
     title: "【オリジナル】LET IT BURN【ChroNoiR feat.加賀美ハヤト】",
     type: "original",
-    release: "Oct 30, 2020",
+    release: ["Oct 30, 2020"],
     link: "https://youtu.be/kkHLnRSCCec",
     image: "images/Songimages/LetitBurn.png",
   },
@@ -34,7 +50,7 @@ const songlist = [
   {
     title: "【オリジナル】Geminids",
     type: "original",
-    release: "Dec 20, 2020",
+    release: ["Dec 20, 2020"],
     link: "https://youtu.be/kkHLnRSCCec",
     image: "images/Songimages/Geminids.jpg",
   },
@@ -42,41 +58,25 @@ const songlist = [
   {
     title: "【オリジナルMV】ChroNoiR HoneyWorks medley",
     type: "cover",
-    release: "Feb 21, 2021",
+    release: ["Feb 21, 2021"],
     link: "https://youtu.be/dXduaq_QbdI",
-    image: "images/icebreaker.png",
+    image: "images/Songimages/Honeyworks.jpg",
   },
 
   {
     title: "【オリジナルMV】シュガーヘイト",
     type: "cover",
-    release: "May 28, 2021",
+    release: ["May 28, 2021"],
     link: "https://youtu.be/VNgVknQ69cc",
-    image: "images/icebreaker.png",
+    image: "images/Songimages/Sugarhate.jpg",
   },
 
   {
     title: "【オリジナルMV】アウトサイダー",
     type: "cover",
-    release: "June 27, 2021",
+    release: ["June 27, 2021"],
     link: "https://youtu.be/ElrslcJTaAk",
-    image: "images/icebreaker.png",
-  },
-
-  {
-    title: "【オリジナル】ブラッディ・グルービー",
-    type: "original",
-    release: "Dec 25, 2021",
-    link: "https://youtu.be/RGELbl63AQI",
-    image: "images/icebreaker.png",
-  },
-
-  {
-    title: "【オリジナルMV】CandyDance",
-    type: "cover",
-    release: "July 10, 2022",
-    link: "https://youtu.be/JaBTZit9cuo",
-    image: "images/CandyDance.png",
+    image: "images/Songimages/outsider.jpg",
   },
 
   {
@@ -84,47 +84,47 @@ const songlist = [
     type: "original",
     release: "Nov 6, 2021",
     link: "https://youtu.be/A7wT8CRUU_E",
-    image: "images/icebreaker.png",
+    image: "images/Songimages/GuraGura.jpg",
+  },
+
+  {
+    title: "【オリジナル】ブラッディ・グルービー",
+    type: "original",
+    release: ["Dec 25, 2021"],
+    link: "https://youtu.be/RGELbl63AQI",
+    image: "images/Songimages/Bloody-Groovy.jpg",
+  },
+
+  {
+    title: "【オリジナルMV】CandyDance",
+    type: "cover",
+    release: ["July 10, 2022"],
+    link: "https://youtu.be/JaBTZit9cuo",
+    image: "images/Songimages/CandyDance.png",
   },
 
   {
     title: "【オリジナル】スターブラックゲイザー",
     type: "original",
-    release: "Aug 22, 2022",
+    release: ["Aug 22, 2022"],
     link: "https://youtu.be/TlZI83VuU3Y",
-    image: "images/blackstargazer.jpg",
-  },
-
-  {
-    title: "【初投稿】終末じゃない　歌ってみた",
-    type: "original",
-    release: "Aug 23, 2018",
-    link: "https://youtu.be/D5Cdf-iiuy8",
-    image: "images/icebreaker.png",
-  },
-
-  {
-    title: "【MV】ヘテロスタシス ",
-    type: "original",
-    release: "Feb 11, 2020",
-    link: "https://youtu.be/sTcvNTQS86s",
-    image: "images/icebreaker.png",
+    image: "images/Songimages/blackstargazer.jpg",
   },
 
   {
     title: "【オリジナルMV】シネマ ",
     type: "cover",
-    release: "Dec 11, 2022",
+    release: ["Dec 11, 2022"],
     link: "https://youtu.be/k0olaw_WjlA",
-    image: "images/icebreaker.png",
+    image: "images/Songimages/Cinima.jpg",
   },
 
   {
-    title: "【オリジナル】Lily ",
+    title: "【オリジナル】Up2You - Lily ",
     type: "original",
-    release: "Dec 11, 2022",
+    release: ["Dec 11, 2022"],
     link: "https://youtu.be/ph4XsJy1scg",
-    image: "images/icebreaker.png",
+    image: "images/Songimages/Up2you.jpg",
   },
 ];
 

@@ -51,6 +51,7 @@ function original() {
   DOMSelectors.display.innerHTML = "";
   songlist
     .filter((song) => song.type == "original")
+
     .forEach((song) => {
       DOMSelectors.display.insertAdjacentHTML(
         "beforeend",
