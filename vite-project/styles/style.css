@@ -109,10 +109,10 @@ h5 {
     box-sizing: border-box;
     border-radius: 20px;
     padding: 1.5rem;
-    width: fit-content;
+    width: 40%;
     justify-content: center;
     background-color: var(--primary);
-    margin: auto;
+    margin: auto; 
 
 }
 .main-info{
@@ -169,16 +169,16 @@ h5 {
   box-shadow: 0 1rem 1rem var(--secondary);
 }
 
-.btn,
-.btn:link,
-.btn:visited, .link-btn, .ori-btn, .cover-btn, .all-btn{
+.angel-btn,
+.angel-btn:link,
+.angel-btn:visited, .vampire-btn, .vampire-btn:link, .vampire-btn:visited, .link-btn, .ori-btn, .cover-btn, .all-btn{
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
   display: inline-block;
   margin: 3rem;
-  font-size: 2rem;
-  border-radius: 2rem;
+  font-size: 1.5rem;
+  border-radius: 3rem;
   transition: all 0.2s;
   position: relative;
   border-style:double;
@@ -187,11 +187,11 @@ h5 {
   animation-fill-mode: backwards;
   background-color: #ffffff;
 }
-.btn:hover, .ori-btn:hover, .cover-btn:hover, .all-btn:hover{
+.angel-btn:hover, .vampire-btn:hover, .ori-btn:hover, .cover-btn:hover, .all-btn:hover{
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem var(--secondary);
 }
-.btn:active, .ori-btn:active, .cover-btn:active, .all-btn:active{
+.angel-btn:active, .vampire-btn:active, .ori-btn:active, .cover-btn:active, .all-btn:active{
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem var(--secondary); 
 }

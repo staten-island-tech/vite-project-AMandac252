@@ -8,37 +8,32 @@ AOS.init();
 
 const DOMSelectors = {
   display: document.querySelector(".display"),
-  themeBtn: document.querySelector(".btn"),
+  angel: document.querySelector(".angel-btn"),
+  vampire: document.querySelector(".vampire-btn"),
   orignal: document.querySelector(".ori-btn"),
   cover: document.querySelector(".cover-btn"),
   all: document.querySelector(".all-btn"),
 };
 
-DOMSelectors.themeBtn.addEventListener("click", function () {
-  if (document.body.classList.contains("cool")) {
-    document.body.classList.add("warm");
-    document.body.classList.remove("cool");
-  } else {
-    document.body.classList.add("cool");
-    document.body.classList.remove("warm");
-  }
+DOMSelectors.angel.addEventListener("click", function () {
+  document.body.classList.add("cool");
+  document.body.classList.remove("warm");
+});
+
+DOMSelectors.vampire.addEventListener("click", function () {
+  document.body.classList.add("warm");
+  document.body.classList.remove("cool");
 });
 
 DOMSelectors.orignal.addEventListener("click", function () {
-  console.log("orignal");
-
   original();
 });
 
 DOMSelectors.cover.addEventListener("click", function () {
-  console.log("cover");
-
   cover();
 });
 
 DOMSelectors.all.addEventListener("click", function () {
-  console.log("all");
-
   all();
 });
 
