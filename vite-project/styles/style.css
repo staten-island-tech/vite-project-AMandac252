@@ -26,11 +26,11 @@ body,
   
   --light-blue: #ABD3D8;
   --mid-blue: #589DB3;
-  --dark-blue:#102f94;
+  --dark-blue:rgba(0, 101, 135, 0.165);
   
   --light-gray: #ACA7BB;
   --mid-gray: #84848A;
-  --dark-red: #9f1818;
+  --dark-red: rgba(38, 0, 95, 0.135);
 
   --gray: #252c30;
 }
@@ -38,20 +38,21 @@ body,
    --primary: var(--light-gray);
    --secondary: var(--mid-gray);
    --tertiary:var(--dark-red); 
-   background-image: url(images/V.png);
+   
 
    }
  .cool {
    --primary: var(--light-blue);
    --secondary: var(--mid-blue);
-   --tertiary:var(--dark-blue);
-   background-image: url(images/A.png);
+   --tertiary: var(--dark-blue);
+   
  }
    
 body{
   background-repeat: no-repeat;
   background-position: top;
 }
+
 
 
 h1 {
@@ -120,13 +121,17 @@ h5 {
 .display{
   display: flex;
   flex-wrap: wrap;
-  width: 95vw;
+  width: 75vw;
   flex-direction: row;
   justify-content: space-around;
-  margin: 3rem;
+  margin: auto;
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
+  background-color: var(--tertiary);
+  border-radius: 30px;
+  padding: 3rem;
+  
 
 }
 
@@ -137,7 +142,7 @@ h5 {
   border-radius: 20px;
   font-style: italic;
   margin: 2rem; 
-  width: 23%;
+  width: 29%;
   justify-content: space-around;
   font-weight: bold;
   align-items: center;
@@ -169,7 +174,8 @@ h5 {
   text-decoration: none;
   padding: 1.5rem 4rem;
   display: inline-block;
-  margin: 3rem;
+  margin: 3rem 2.5rem;
+  justify-content: space-around;
   font-size: 1.5rem;
   border-radius: 3rem;
   transition: all 0.2s;

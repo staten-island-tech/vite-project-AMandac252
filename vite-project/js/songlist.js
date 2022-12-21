@@ -1,7 +1,7 @@
 const songlist = [
   {
     title: "【初投稿】終末じゃない　歌ってみた",
-    type: "original",
+    type: "cover",
     release: ["Aug 23, 2018"],
     link: "https://youtu.be/D5Cdf-iiuy8",
     image: "images/Songimages/終末じゃない　歌ってみた.jpg",
