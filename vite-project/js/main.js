@@ -94,3 +94,14 @@ function all() {
     );
   });
 }
+
+function img() {
+  console.log("image");
+  DOMSelectors.display.insertAdjacentHTML(
+    "beforebegin",
+
+    `<div class="main-img">
+        <img class="=img" src="images/A.png"/>
+      </div>`
+  );
+}
