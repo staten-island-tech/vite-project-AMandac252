@@ -26,11 +26,11 @@ body,
   
   --light-blue: #ABD3D8;
   --mid-blue: #589DB3;
-  --dark-blue:rgba(0, 101, 135, 0.165);
+  --dark-blue:rgba(29, 133, 168, 0.63);
   
   --light-gray: #ACA7BB;
   --mid-gray: #84848A;
-  --dark-red: rgba(38, 0, 95, 0.135);
+  --dark-red: rgba(123, 106, 147, 0.63);
 
   --gray: #252c30;
 }
@@ -80,6 +80,14 @@ h3,
 h4,
 h5 {
   text-align: center;
+}
+
+body{
+  background-image: url("../public/images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
 }
 
 
